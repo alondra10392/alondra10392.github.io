@@ -1,0 +1,76 @@
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabla con estilos</title>
+<style>
+.tabla-estilo {
+    width: 80%; /* Ancho de la tabla */
+    margin: 20px auto; /* Centrar la tabla y agregar espacio */
+    border-collapse: collapse; /* Eliminar espacio entre las celdas */
+    font-family: Arial, sans-serif; /* Fuente de la tabla */
+}
+
+.tabla-estilo th {
+    background-color: #EE82EE; /* Color de fondo de las cabeceras */
+    padding: 10px; /* Espacio interno en las cabeceras */
+    text-align: left; /* Alineación del texto en las cabeceras */
+    border: 1px solid #ddd; /* Borde de las cabeceras */
+}
+
+.tabla-estilo td {
+    padding: 10px; /* Espacio interno en las celdas */
+    border: 1px solid #ddd; /* Borde de las celdas */
+}
+
+/* Estilos alternos para las filas */
+.tabla-estilo tr:nth-child(even) {
+    background-color: #7B68EE; /* Color de fondo de las filas pares */
+}
+
+.tabla-estilo tr:hover {
+    background-color:#87CEEB ; /* Color de fondo al pasar el mouse */
+}
+</style>
+</head>
+<body>
+
+<table class="tabla-estilo">
+    <thead>
+        <tr>
+            <th>Parcial</th>
+            <th>Nombre de la actividad</th>
+            <th>Descripcion</th>
+            <th>Evidencia</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Celda 1.1</td>
+            <td>Celda 1.2</td>
+            <td>Celda 1.3</td>
+            <td>Celda 1.4</td>
+        </tr>
+        <tr>
+            <td>Celda 2.1</td>
+            <td>Celda 2.2</td>
+            <td>Celda 2.3</td>
+            <td>Celda 2.4</td>
+        </tr>
+        <tr>
+            <td>Celda 3.1</td>
+            <td>Celda 3.2</td>
+            <td>Celda 3.3</td>
+            <td>Celda 3.4</td>
+        </tr>
+        <tr>
+            <td>Celda 4.1</td>
+            <td>Celda 4.2</td>
+            <td>Celda 4.3</td>
+            <td>Celda 4.4</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
